@@ -8,7 +8,7 @@
 const express = require('express');
 const dbConnect = require('./database/index');
 // Constants
-const { PORT, HOST} = require('./config/index')
+const { PORT, HOST} = require('./configurations/index')
 
 //DB Connection
 dbConnect();
