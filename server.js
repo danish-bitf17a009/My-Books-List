@@ -6,10 +6,10 @@
 'use strict';
 
 const express = require('express');
-
+const dbConnect = require('./database/index');
+const { MONGODB_CONNECTION_STRING, PORT, HOST} = require(./config/index)
 // Constants
-const PORT = 3000;
-const HOST = '0.0.0.0';
+
 
 // App
 const app = express();
