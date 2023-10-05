@@ -7,9 +7,11 @@
 
 const express = require('express');
 const dbConnect = require('./database/index');
-const { MONGODB_CONNECTION_STRING, PORT, HOST} = require(./config/index)
 // Constants
+const { PORT, HOST} = require('./config/index')
 
+//DB Connection
+dbConnect();
 
 // App
 const app = express();
