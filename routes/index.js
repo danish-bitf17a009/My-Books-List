@@ -5,8 +5,9 @@ const router =express.Router();
 router.get('/books',bookController.getBooks);
 router.post('/users',);
 router.post('/addbook',bookController.addBook);
-router.delete('/removebook',);
-router.put('/updatebook',);
+router.delete('/removebook',bookController.removeBook);
+router.put('/updatebook',bookController.updateBook);
+
 
 module.exports = router;
 
