@@ -1,4 +1,4 @@
-const mongoose = require('mongoose0');
+const mongoose = require('mongoose');
 const {Schema} = mongoose;
 
 const bookSchema = new Schema({

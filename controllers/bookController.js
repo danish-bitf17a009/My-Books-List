@@ -43,7 +43,11 @@ const bookController = {
         } catch (error) {
             return next(error);
         }
+        //
+        console.log("Router Workng");
+        //
         return res.status(200).json(books);
+       
     },
     async removeBook(req, res, next)
     {
